@@ -8,11 +8,6 @@ const models = [
     scale: '0.5 0.5 0.5',
     rotation: '0 225 0'
   },
-  {
-    url: './assets/myModel/scene.gltf',
-    scale: '0.5 0.5 0.5',
-    rotation: '0 225 0'
-  }
 ];
 
 let modelIndex = 0;
