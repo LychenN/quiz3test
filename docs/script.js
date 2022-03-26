@@ -25,9 +25,9 @@ function renderPlaces(places) {
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);//model's location detail
         model.setAttribute('gltf-model', './assets/MyModel/scene.gltf');//locate and pu a model to the place
-        model.setAttribute('rotation', '0 180 0');//can rotate the camera to find the model
+        model.setAttribute('rotation', '0 160 0');//can rotate the camera to find the model
         model.setAttribute('animation-mixer', '');//mix the gps and the model in the camera
-        model.setAttribute('scale', '0.5 0.5 0.5');//to change the model size
+        model.setAttribute('scale', '1.5 1.5 1.5');//to change the model size
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
